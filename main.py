@@ -8,9 +8,11 @@ and api_secret.
 """
 session = HTTP(
     testnet=True,
-    api_key="...",
-    api_secret="...",
+    api_key="MWvHnQQH3kgWD32o6P",
+    api_secret="gByweE1l74shCdBxCte8lX66QgDZh6r7L0aL",
 )
 
-print("hello")
+response = session.get_orderbook(category = "linear", symbol = "BTC")
+
+print (response)
 
